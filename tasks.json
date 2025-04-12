@@ -1,0 +1,14 @@
+[
+  {
+    "text": "Complete Task Manger Application",
+    "completed": true
+  },
+  {
+    "text": "Go to the Gym",
+    "completed": false
+  },
+  {
+    "text": "Execute Weekends plans",
+    "completed": false
+  }
+]
