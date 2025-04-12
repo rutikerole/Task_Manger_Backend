@@ -6,7 +6,7 @@ const cors = require("cors");       // Allows frontend (React) to talk to backen
 
 // 2. Initialize the App
 const app = express();               // Start the express app
-const PORT = 5000;
+//const PORT = 5000;
 const FILE = "tasks.json";           // stores everything in a file called tasks.json (like our notebook).
 
 // 3. Middleware (helpers)
@@ -56,7 +56,18 @@ app.delete("/tasks/:index", (req, res) => {
   res.json({ success: true });                 // Send success
 });
 
+// 9. Local Testing: Only start server if running locally
+if (require.main === module) {
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;
 // 9. Start server
+/*
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
+*/
