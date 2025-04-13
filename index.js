@@ -6,7 +6,7 @@ const cors = require("cors");       // Allows frontend (React) to talk to backen
 
 // 2. Initialize the App
 const app = express();               // Start the express app
-//const PORT = 5000;
+const PORT = 5000;
 const FILE = "tasks.json";           // stores everything in a file called tasks.json (like our notebook).
 
 // 3. Middleware (helpers)
