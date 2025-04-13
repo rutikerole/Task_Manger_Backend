@@ -10,5 +10,9 @@
   {
     "text": "Execute Weekends plans",
     "completed": false
+  },
+  {
+    "text": "hey",
+    "completed": true
   }
 ]
